@@ -47,12 +47,12 @@ rsa==4.6
 
 tensorboard==2.5.0
 tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.7.0
+
 tensorflow==2.5.0
 tensorflow-estimator==2.5.0
 
 threadpoolctl==2.1.0
-tifffile==2020.12.8
+
 toml==0.10.2
 tornado==6.1
 
