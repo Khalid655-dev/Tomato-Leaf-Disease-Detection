@@ -25,7 +25,8 @@ app = Flask(__name__)
 MODEL_PATH = 'ReTrained98.h5'
 
 # Load your trained model
-model = load_model(MODEL_PATH)
+import tensorflow as tf
+model = tf.keras.models.load_model(MODEL_PATH)
 
 
 def model_predict(img_path, model):
