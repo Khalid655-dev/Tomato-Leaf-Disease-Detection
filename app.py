@@ -17,7 +17,7 @@ from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 
 # from gevent.pywsgi import WSGIServer
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Define a flask app
 app = Flask(__name__)
 
