@@ -22,7 +22,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-MODEL_PATH = 'ReTrained98.h5'
+MODEL_PATH =  os.path.join(BASE_DIR, 'ReTrained98.h5')
 
 # Load your trained model
 import tensorflow as tf
