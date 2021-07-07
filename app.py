@@ -4,6 +4,9 @@ import glob
 import re
 import numpy as np
 
+
+os.environ['KERAS_BACKEND'] = 'theano'
+
 # Keras
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
