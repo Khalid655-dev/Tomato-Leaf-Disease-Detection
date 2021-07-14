@@ -5,7 +5,7 @@ import re
 import numpy as np
 
 
-os.environ['KERAS_BACKEND'] = 'theano'
+##os.environ['KERAS_BACKEND'] = 'theano'
 
 # Keras
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
@@ -92,4 +92,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
