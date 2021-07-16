@@ -75,6 +75,18 @@ def index():
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
+        import shutil
+
+
+        if os.path.exists('uploads'):
+            directory = "uploads"
+
+            # Path
+            path = os.path.join(os.path.dirname(__file__), directory)
+
+            # Remove the Directory
+            # "ihritik"
+            shutil.rmtree(path)
 
         f = request.files['file']
 
